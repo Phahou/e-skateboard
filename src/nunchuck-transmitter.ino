@@ -1,6 +1,15 @@
-#include <Wire.h>
+ #include <Wire.h>
 #include <wiinunchuck.h>
 #include <VirtualWire.h>
+
+/**
+ * Nunchuck cables:
+ * red -> 3.3V
+ * white -> GND
+ * yellow -> a5 (some analog pin)
+ * green -> a4 (some analog pin)
+ * black -> GND
+ */
 
 void setup() {
 	 Serial.begin(9600);
